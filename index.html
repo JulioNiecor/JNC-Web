@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Julio Nieto</title>
+    <link rel="icon" href="images/Logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        $(() => {
+
+            let mybutton = $("#btn-back-to-top");
+
+            $(window).scroll(function () {
+                scrollFunction();
+
+                $(".fade-in").each(function () {
+                    var position = $(this).offset().top;
+
+                    var scroll = $(window).scrollTop();
+
+                    if (position < scroll + $(window).height()) {
+                        $(this).addClass("visible");
+                    }
+                });
+            });
+
+            function scrollFunction() {
+                if ($(document).scrollTop() > 20) {
+                    mybutton.css("display", "block");
+                } else {
+                    mybutton.css("display", "none");
+                }
+            }
+
+            mybutton.click(function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+
+            $(window).scroll(function () {
+            
+        });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/Logo.png" alt="Mi Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="links" href="#home">Inicio</a></li>
+                <li><a class="links" href="#about-me">Sobre mí</a></li>
+                <li><a class="links" href="#projects">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home section -->
+    <section id="home" class="section">
+        <!-- Animated background -->
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="content scale-in-center">
+            <div class="image">
+                <img src="images/Logo.png" alt="" class="profile">
+            </div>
+            <div class="technologies">
+                <h1 >Hola, soy Julio Nieto <br> Desarrollador Front-end</h1>
+                <h2>Tecnologías mas utilizadas:</h2>
+                <div class="tag-list">
+                    <div class="inner">
+                        <!-- Lista original -->
+                        <div class="tag"><span>#</span>HTML</div>
+                        <div class="tag"><span>#</span>CSS</div>
+                        <div class="tag"><span>#</span>JavaScript</div>
+                        <div class="tag"><span>#</span>Angular</div>
+                        <div class="tag"><span>#</span>Sql</div>
+                        <div class="tag"><span>#</span>Laravel</div>
+                        <div class="tag"><span>#</span>Wordpress</div>
+                        <div class="tag"><span>#</span>Filezilla</div>
+                        <div class="tag"><span>#</span>Github</div>
+
+                        <!-- Duplicada para loop infinito -->
+                        <div class="tag"><span>#</span>HTML</div>
+                        <div class="tag"><span>#</span>CSS</div>
+                        <div class="tag"><span>#</span>JavaScript</div>
+                        <div class="tag"><span>#</span>Angular</div>
+                        <div class="tag"><span>#</span>Sql</div>
+                        <div class="tag"><span>#</span>Laravel</div>
+                        <div class="tag"><span>#</span>Wordpress</div>
+                        <div class="tag"><span>#</span>Filezilla</div>
+                        <div class="tag"><span>#</span>Github</div>
+                    </div>
+                </div>
+                <h2>Enlaces útiles:</h2>
+                <div class="links">
+                    <a class="links" href="/files/Curriculum_julio_nieto_cordón.pdf"><i class="bi bi-file-earmark-person-fill"></i></a>
+                    <a class="links" href="https://github.com/JulioNiecor"><i class="bi bi-github"></i></a>
+                    <a class="links" href="https://www.linkedin.com/in/julioniecor/"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me section -->
+    <section id="about-me" class="section">
+        <div class="content fade-in">
+            <h1 class="title">Sobre mí</h1>
+            <div class="information">
+                <!-- <div class="image">
+                    <img src="images/Logo.png" alt="" style="width: 300px;">
+                </div> -->
+                <div class="about-me">
+                    <p>
+                        ¡Hola! Soy Julio, un apasionado desarrollador web junior con experiencia en HTML5, CSS, JavaScript 
+                        y Angular, además de habilidades en GitHub. Mi enfoque autodidacta me impulsa a embarcarme en 
+                        proyectos desafiantes para aprender continuamente.
+                        <br><br>
+                        Mi filosofía es abordar cada línea de código como una oportunidad de crecimiento. Busco no solo cumplir, sino superar 
+                        expectativas. Si buscas un profesional comprometido y entusiasta, mi portfolio cuenta la historia visual de mi viaje y 
+                        habilidades. ¡Espero entusiasmar a tu equipo con mi contribución!
+                    </p>
+                    <div class="links">
+                        <a class="links" href="/files/Curriculum_julio_nieto_cordón.pdf"><i class="bi bi-file-earmark-person-fill"></i></a>
+                        <a class="links" href="https://github.com/JulioNiecor"><i class="bi bi-github"></i></a>
+                        <a class="links" href="https://www.linkedin.com/in/julioniecor/"><i class="bi bi-linkedin"></i></a>
+                        <a class="links" href="mailto:julioniecor@gmail.com"><i class="bi bi-envelope-arrow-up-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section">
+        <div class="content fade-in">
+            <h1 class="title">Proyectos</h1>
+            <div class="project">
+                <div class="information">
+                    <h3>TODO App</h3>
+                    <p>
+                        Este proyecto es una implementación simple de una lista de tareas interactiva utilizando HTML, 
+                        CSS y JavaScript, con la incorporación del framework Bootstrap para mejorar la interfaz de usuario. 
+                        La aplicación permite al usuario agregar, editar, marcar como completadas y eliminar tareas de 
+                        manera dinámica.
+                    </p>
+                    <div class="buttons-group">
+                        <button type="button" class="btn btn-outline-primary"><a href="https://jnc-todo.netlify.app/">Probar</a></button>
+                        <button type="button" class="btn btn-outline-primary"><a href="https://github.com/JulioNiecor/JNC-TODO">Ver código</a></button>
+                    </div>
+                </div>
+                <img src="images/TODOApp2.png" alt="" class="preview scale-up">
+            </div>
+            <div class="project">
+                <div class="information">
+                    <h3>CineFlix</h3>
+                    <p>
+                        Este proyecto es una aplicación web desarrollada en Angular que permite a los usuarios explorar sus 
+                        películas y series favoritas. Utiliza la API de The Movie Database (TMDB) para obtener información 
+                        detallada sobre películas y series, y ofrece funcionalidades como búsqueda y visualización de detalles.
+                    </p>
+                    <div class="buttons-group">
+                        <button type="button" class="btn btn-outline-primary"><a href="https://jnc-cineflix.netlify.app/home">Probar</a></button>
+                        <button type="button" class="btn btn-outline-primary"><a href="https://github.com/JulioNiecor/JNC-Cineflix">Ver código</a></button>
+                    </div>
+                </div>
+                
+                <img src="images/Cineflix.png" alt="" class="preview scale-up">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content fade-in">
+            <div data-tf-live="01HM8PXKVAZ30JVAC2MZTJVRYZ"></div><script src="//embed.typeform.com/next/embed.js"></script>            
+        </div>
+    </section>
+
+    <!-- Scroll button -->
+    <button id="btn-back-to-top">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        © Julio Nieto Cordón
+    </footer>
+</body>
+</html>
